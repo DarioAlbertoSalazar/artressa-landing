@@ -97,21 +97,6 @@ h1, h2, h3, h4 { line-height: 1.25; color: var(--azul-oscuro); }
 }
 .nav-links a:hover { color: var(--naranja); }
 
-.btn-whatsapp-nav {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  background: #25D366;
-  color: var(--blanco);
-  padding: 9px 16px;
-  border-radius: 30px;
-  font-weight: 600;
-  font-size: 0.9rem;
-  white-space: nowrap;
-  transition: transform var(--transicion), background var(--transicion);
-}
-.btn-whatsapp-nav:hover { background: #1eb856; transform: translateY(-2px); }
-
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -589,15 +574,14 @@ h1, h2, h3, h4 { line-height: 1.25; color: var(--azul-oscuro); }
     background: var(--azul-oscuro);
     flex-direction: column;
     align-items: center;
-    padding: 20px 0;
+    padding: 0;
     gap: 18px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height var(--transicion);
+    transition: max-height var(--transicion), padding var(--transicion);
   }
-  .nav-links.open { max-height: 420px; }
+  .nav-links.open { max-height: 420px; padding: 20px 0; }
   .nav-toggle { display: flex; }
-  .btn-whatsapp-nav span { display: none; }
 }
 
 @media (max-width: 900px) {
