@@ -1,0 +1,13 @@
+{
+  "name": "artressa-landing",
+  "version": "1.0.0",
+  "description": "Landing page de ARTRESSA — catálogo de turbinas y rotores industriales",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx --yes serve ."
+  },
+  "keywords": ["artressa", "landing-page", "turbinas-industriales"],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
