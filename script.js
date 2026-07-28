@@ -5,7 +5,7 @@
 
 // ============ CONFIG: reemplazar con el número real del cliente ============
 // Formato: código de país + número, sin espacios ni signos (ej. México: 521 + 10 dígitos)
-const WHATSAPP_NUMBER = "5215512345678"; // <-- [WHATSAPP] reemplazar aquí
+const WHATSAPP_NUMBER = "5218131164776";
 
 document.addEventListener("DOMContentLoaded", function () {
 
