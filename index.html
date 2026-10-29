@@ -25,10 +25,16 @@
 <meta name="twitter:description" content="Fabricación de turbinas centrífugas, rotores jaula de ardilla, aspas axiales y ventiladores industriales bajo especificación.">
 <meta name="twitter:image" content="https://www.artressa.com.mx/assets/og-cover.jpg">
 
-<meta name="theme-color" content="#10202f">
+<meta name="theme-color" content="#0b0f14">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" as="image" href="assets/turbina-backward-inclined-1.jpg">
+
+<!-- Tipografía: Inter Tight -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&display=swap">
+
 <link rel="stylesheet" href="styles.css">
 
 <!-- ===================== Datos estructurados (Schema.org) para SEO ===================== -->
@@ -79,7 +85,7 @@
   "@type": "ItemList",
   "name": "Catálogo de turbinas y rotores industriales ARTRESSA",
   "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Jaula de ardilla industrial doble entrada", "image": "https://www.artressa.com.mx/assets/jaula-ardilla-doble-entrada-1.jpg"},
+    {"@type": "ListItem", "position": 1, "name": "Jaula de ardilla industrial doble entrada", "image": "https://www.artressa.com.mx/assets/jaula-ardilla-doble-entrada-2.jpg"},
     {"@type": "ListItem", "position": 2, "name": "Turbina centrífuga backward inclined", "image": "https://www.artressa.com.mx/assets/turbina-backward-inclined-1.jpg"},
     {"@type": "ListItem", "position": 3, "name": "Jaula de ardilla compacta", "image": "https://www.artressa.com.mx/assets/jaula-ardilla-compacta.jpg"},
     {"@type": "ListItem", "position": 4, "name": "Ventilador centrífugo industrial ensamblado", "image": "https://www.artressa.com.mx/assets/ventilador-centrifugo-ensamblado.jpg"},
@@ -88,416 +94,563 @@
   ]
 }
 </script>
+<!-- Debe coincidir con las preguntas visibles de la sección FAQ -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "¿Qué turbinas y rotores fabrican?",
-      "acceptedAnswer": {"@type": "Answer", "text": "Nuestro catálogo incluye jaula de ardilla industrial de doble entrada, jaula de ardilla compacta, turbinas centrífugas backward inclined, ventiladores centrífugos industriales ensamblados, aspas axiales de 6 palas y rotores de alta presión tipo radial."}
-    },
-    {
-      "@type": "Question",
-      "name": "¿Fabrican turbinas a medida o réplicas de un rotor existente?",
-      "acceptedAnswer": {"@type": "Answer", "text": "Sí. Fabricamos bajo especificación a partir de un plano, de las dimensiones del equipo o de la pieza física que quieras reemplazar, respetando diámetro, ancho, número de álabes y medida del eje."}
-    },
-    {
-      "@type": "Question",
-      "name": "¿Cuál es la diferencia entre una jaula de ardilla y una turbina backward inclined?",
-      "acceptedAnswer": {"@type": "Answer", "text": "La jaula de ardilla es multiálabe con álabes curvados al frente: entrega gran caudal a presión moderada y en poco espacio. La backward inclined tiene álabes inclinados hacia atrás, ofrece mayor eficiencia y menor consumo del motor, y trabaja mejor a presiones altas y aire limpio."}
-    },
-    {
-      "@type": "Question",
-      "name": "¿Qué materiales y acabados manejan?",
-      "acceptedAnswer": {"@type": "Answer", "text": "Los equipos del catálogo se fabrican en acero al carbón con recubrimiento industrial y en construcción remachada de aleación ligera. El material y el acabado final se definen según la temperatura, la abrasión y el tipo de aire que va a manejar el equipo."}
-    },
-    {
-      "@type": "Question",
-      "name": "¿Cuánto cuesta una turbina industrial?",
-      "acceptedAnswer": {"@type": "Answer", "text": "El precio depende del diámetro, el ancho, el tipo de álabe, el material y el acabado. Envíanos las medidas o una foto de tu equipo por WhatsApp y te cotizamos sin costo."}
-    },
-    {
-      "@type": "Question",
-      "name": "¿Cuál es el tiempo de entrega?",
-      "acceptedAnswer": {"@type": "Answer", "text": "Depende del modelo, las dimensiones y la carga de taller al momento del pedido. El tiempo de entrega se confirma por escrito junto con la cotización."}
-    },
-    {
-      "@type": "Question",
-      "name": "¿Hacen envíos a toda la República Mexicana?",
-      "acceptedAnswer": {"@type": "Answer", "text": "Sí, coordinamos el envío a cualquier punto del país. El costo se calcula según el destino, el peso y las dimensiones del equipo."}
-    },
-    {
-      "@type": "Question",
-      "name": "¿Cómo solicito una cotización?",
-      "acceptedAnswer": {"@type": "Answer", "text": "Escríbenos por WhatsApp o llena el formulario de contacto indicando el tipo de equipo y sus medidas. Entre más datos y fotos nos compartas, más precisa será la cotización."}
-    }
+    {"@type": "Question", "name": "¿Fabrican con las medidas de mi equipo actual?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Tomamos medidas en sitio o usamos tu pieza dañada como muestra para reproducirla con las dimensiones exactas de flecha, diámetro y ancho."}},
+    {"@type": "Question", "name": "¿Puedo cotizar si no conozco las medidas?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Elige «No estoy seguro / necesito asesoría» en el formulario y agendamos una revisión técnica para definir el equipo correcto."}},
+    {"@type": "Question", "name": "¿Cuánto tarda la fabricación?", "acceptedAnswer": {"@type": "Answer", "text": "Depende del tipo de equipo, el tamaño y la cantidad. El tiempo de entrega queda por escrito en tu cotización antes de iniciar."}},
+    {"@type": "Question", "name": "¿Qué materiales y acabados manejan?", "acceptedAnswer": {"@type": "Answer", "text": "Trabajamos acero al carbón, lámina galvanizada y aluminio, con acabado en pintura industrial. En la revisión técnica definimos el material ideal para tu aplicación."}},
+    {"@type": "Question", "name": "¿Hacen visitas a planta?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Al agendar puedes elegir visita en planta, visita técnica, llamada o videollamada."}},
+    {"@type": "Question", "name": "¿Cómo se envía mi solicitud?", "acceptedAnswer": {"@type": "Answer", "text": "Al terminar el formulario se abre WhatsApp con todos tus datos listos. Solo envía el mensaje y te confirmamos la cita."}}
   ]
 }
 </script>
 </head>
 <body>
 
+<!-- Enlace para saltar la navegación con teclado -->
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
+<!-- Barra de progreso de scroll -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
 <!-- ============================= NAVBAR ============================= -->
+<!-- Transparente sobre el hero; script.js agrega .is-solid al bajar y .is-hidden al bajar rápido -->
 <header class="navbar" id="navbar">
-  <div class="nav-container">
-    <a href="#inicio" class="nav-logo" aria-label="ARTRESSA — inicio">
-      <img src="assets/marca-artressa-blanco.png" alt="Logo ARTRESSA" width="27" height="40">
-      <span class="nav-logo-text">
-        <strong>ARTRESSA</strong>
-        <em>Crea · Innova · Soluciona</em>
-      </span>
+  <div class="wrap nav-container">
+    <a href="#inicio" class="nav-logo" aria-label="ARTRESSA, ir al inicio">
+      <img src="assets/marca-artressa-blanco.png" alt="" width="22" height="33">
+      <span>ARTRESSA</span>
     </a>
 
-    <nav class="nav-links" id="navLinks">
-      <a href="#inicio">Inicio</a>
-      <a href="#productos">Productos</a>
-      <a href="#galeria">Galería</a>
-      <a href="#nosotros">Nosotros</a>
-      <a href="#faq">Preguntas Frecuentes</a>
-      <a href="#contacto">Contacto</a>
+    <nav class="nav-links" aria-label="Principal">
+      <a class="nav-link" href="#productos">Productos</a>
+      <a class="nav-link" href="#proceso">Proceso</a>
+      <a class="nav-link" href="#nosotros">Nosotros</a>
+      <a class="nav-link" href="#faq">FAQ</a>
+      <a class="btn nav-cta" href="#agenda">Agenda tu cotización</a>
     </nav>
 
-    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
-      <span></span><span></span><span></span>
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuMovil">
+      <span></span><span></span>
     </button>
   </div>
 </header>
 
-<main>
-<!-- ============================= HERO + CARRUSEL ============================= -->
-<section class="hero" id="inicio">
-  <div class="carousel" id="carousel">
-    <div class="carousel-track" id="carouselTrack">
-
-      <div class="carousel-slide active">
-        <img class="slide-photo" src="assets/turbina-backward-inclined-1.jpg" alt="Turbina centrífuga backward inclined fabricada por ARTRESSA" width="1100" height="882" fetchpriority="high">
-        <div class="slide-caption">Turbina centrífuga backward inclined</div>
-      </div>
-
-      <div class="carousel-slide">
-        <img class="slide-photo" src="assets/jaula-ardilla-doble-entrada-1.jpg" alt="Rotor jaula de ardilla industrial de doble entrada" width="619" height="1100" loading="lazy">
-        <div class="slide-caption">Jaula de ardilla industrial doble entrada</div>
-      </div>
-
-      <div class="carousel-slide">
-        <img class="slide-photo" src="assets/aspa-axial-6-palas.jpg" alt="Aspa axial industrial de 6 palas" width="825" height="1100" loading="lazy">
-        <div class="slide-caption">Aspa axial industrial de 6 palas</div>
-      </div>
-
-      <div class="carousel-slide">
-        <img class="slide-photo" src="assets/ventilador-centrifugo-ensamblado.jpg" alt="Ventilador centrífugo industrial ensamblado listo para entrega" width="506" height="1100" loading="lazy">
-        <div class="slide-caption">Ventilador centrífugo industrial ensamblado</div>
-      </div>
-
-    </div>
-
-    <button class="carousel-btn prev" id="prevBtn" aria-label="Anterior">&#10094;</button>
-    <button class="carousel-btn next" id="nextBtn" aria-label="Siguiente">&#10095;</button>
-    <div class="carousel-dots" id="carouselDots"></div>
+<!-- Menú móvil a pantalla completa -->
+<div class="menu-movil" id="menuMovil" role="dialog" aria-modal="true" aria-label="Menú" hidden>
+  <div class="wrap menu-movil-top">
+    <span class="menu-movil-marca">ARTRESSA</span>
+    <button class="menu-cerrar" id="menuCerrar" type="button" aria-label="Cerrar menú">×</button>
   </div>
+  <nav class="wrap menu-movil-links" aria-label="Menú móvil">
+    <a href="#productos">Productos <span>03</span></a>
+    <a href="#proceso">Proceso <span>04</span></a>
+    <a href="#nosotros">Nosotros <span>06</span></a>
+    <a href="#faq">FAQ <span>07</span></a>
+  </nav>
+  <div class="wrap menu-movil-pie">
+    <a class="btn" href="#agenda">Agenda tu cotización</a>
+    <a class="menu-movil-correo" href="mailto:contacto@artressa.com.mx">contacto@artressa.com.mx</a>
+  </div>
+</div>
 
-  <div class="hero-overlay">
-    <h1>Turbinas y Rotores Industriales Fabricados a Medida</h1>
-    <p>Jaula de ardilla, backward inclined, aspas axiales y rotores de alta presión &mdash; hechos a la medida de tu equipo.</p>
-    <div class="hero-buttons">
-      <a href="#productos" class="btn-primary">Ver Catálogo</a>
-      <a href="https://wa.me/5218131164776?text=Hola%2C%20quiero%20cotizar%20una%20turbina%20industrial" target="_blank" rel="noopener" class="btn-secondary">Cotizar por WhatsApp</a>
+<main id="main">
+
+<!-- ============================= 01 HERO ============================= -->
+<section class="hero" id="inicio" aria-labelledby="hero-title">
+  <!-- Imagen: se queda atrás al hacer scroll (parallax) con zoom de entrada -->
+  <div class="hero-media" data-parallax="0.35">
+    <img class="hero-img" src="assets/turbina-backward-inclined-1.jpg" alt="Turbina centrífuga backward inclined de acero con álabes remachados, fabricada a medida por ARTRESSA" width="1100" height="882" fetchpriority="high">
+  </div>
+  <div class="hero-velo" aria-hidden="true"></div>
+  <div class="hero-degradado" aria-hidden="true"></div>
+
+  <p class="wrap hero-cap aparece">Turbina centrífuga<br>backward inclined</p>
+
+  <div class="hero-bottom">
+    <div class="wrap g12">
+      <p class="eyebrow hero-eyebrow aparece"><span class="num-ambar">01</span><span class="raya" aria-hidden="true"></span><span>Fabricación industrial a medida · México</span></p>
+      <h1 id="hero-title" class="hero-title">
+        <span class="linea"><span>Turbinas y rotores</span></span>
+        <span class="linea l2"><span>industriales <span class="ligero">fabricados</span></span></span>
+        <span class="linea l3"><span class="ligero">a medida<span class="punto">.</span></span></span>
+      </h1>
+      <div class="hero-sep aparece" aria-hidden="true"></div>
+      <p class="hero-lead aparece">Diseñamos y fabricamos turbinas, rotores y ventiladores con las medidas exactas de tu proceso. Ingeniería que se nota en cada álabe.</p>
+      <div class="hero-actions aparece">
+        <a class="link-flecha" href="#productos">Ver productos <span class="flecha" aria-hidden="true">→</span></a>
+        <a class="btn btn-lg" href="#agenda">Agendar cita</a>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="stats">
-  <div class="stat"><span class="stat-num">6</span><span>Líneas de producto</span></div>
-  <div class="stat"><span class="stat-num">15</span><span>Años de experiencia</span></div>
-  <div class="stat"><span class="stat-num">300</span><span>Equipos fabricados</span></div>
-  <div class="stat"><span class="stat-num">A medida</span><span>Fabricación bajo especificación</span></div>
+<!-- ============================= MARQUEE ============================= -->
+<div class="marquee">
+  <div class="marquee-track">
+    <div class="marquee-group">
+      <span class="marquee-item">Jaula de ardilla industrial doble entrada<span class="cuadro" aria-hidden="true"></span></span>
+      <span class="marquee-item">Turbina centrífuga backward inclined<span class="cuadro" aria-hidden="true"></span></span>
+      <span class="marquee-item">Jaula de ardilla compacta<span class="cuadro" aria-hidden="true"></span></span>
+      <span class="marquee-item">Ventilador centrífugo industrial ensamblado<span class="cuadro" aria-hidden="true"></span></span>
+      <span class="marquee-item">Aspa axial industrial de 6 palas<span class="cuadro" aria-hidden="true"></span></span>
+      <span class="marquee-item">Rotor de alta presión tipo radial<span class="cuadro" aria-hidden="true"></span></span>
+    </div>
+    <!-- Copia para el bucle continuo -->
+    <div class="marquee-group" aria-hidden="true">
+      <span class="marquee-item">Jaula de ardilla industrial doble entrada<span class="cuadro"></span></span>
+      <span class="marquee-item">Turbina centrífuga backward inclined<span class="cuadro"></span></span>
+      <span class="marquee-item">Jaula de ardilla compacta<span class="cuadro"></span></span>
+      <span class="marquee-item">Ventilador centrífugo industrial ensamblado<span class="cuadro"></span></span>
+      <span class="marquee-item">Aspa axial industrial de 6 palas<span class="cuadro"></span></span>
+      <span class="marquee-item">Rotor de alta presión tipo radial<span class="cuadro"></span></span>
+    </div>
+  </div>
+</div>
+
+<!-- ============================= 02 CIFRAS ============================= -->
+<section class="seccion cifras" aria-labelledby="cifras-title">
+  <div class="wrap">
+    <div class="g12 seccion-cabeza">
+      <p class="eyebrow seccion-eyebrow"><span>02</span><span class="tenue">En cifras</span></p>
+      <h2 id="cifras-title" class="cifras-title" data-reveal="up">Ingeniería mexicana para mover aire en procesos que <span class="ligero tenue">no pueden detenerse.</span></h2>
+    </div>
+    <div class="stats" id="stats">
+      <div class="stat">
+        <div class="stat-num"><span data-count="15">15</span><span class="cuadro" aria-hidden="true"></span></div>
+        <div class="stat-label">Años de experiencia</div>
+        <p class="stat-sub">Fabricando equipo de ventilación industrial.</p>
+      </div>
+      <div class="stat">
+        <div class="stat-num"><span data-count="300" data-pre="+">+300</span><span class="cuadro" aria-hidden="true"></span></div>
+        <div class="stat-label">Equipos fabricados</div>
+        <p class="stat-sub">Turbinas, rotores y ventiladores entregados.</p>
+      </div>
+      <div class="stat">
+        <div class="stat-num"><span data-count="6">6</span><span class="cuadro" aria-hidden="true"></span></div>
+        <div class="stat-label">Líneas de producto</div>
+        <p class="stat-sub">De la jaula de ardilla al rotor radial.</p>
+      </div>
+      <div class="stat">
+        <div class="stat-num"><span data-count="100" data-suf="%">100%</span><span class="cuadro" aria-hidden="true"></span></div>
+        <div class="stat-label">A medida</div>
+        <p class="stat-sub">Cada pieza, con las dimensiones de tu proceso.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- ============================= PRODUCTOS ============================= -->
-<section class="productos" id="productos">
-  <div class="section-header">
-    <h2>Catálogo de Turbinas y Rotores Industriales</h2>
-    <p>Seis líneas de producto fabricadas en taller y adaptadas al equipo de cada cliente</p>
-  </div>
+<!-- ============================= 03 PRODUCTOS ============================= -->
+<!-- Cada botón "Cotizar" lleva data-equipo: script.js lo preselecciona en el formulario -->
+<section class="productos" id="productos" aria-labelledby="productos-title">
+  <div class="wrap">
+    <div class="g12 productos-cabeza">
+      <p class="eyebrow seccion-eyebrow"><span>03</span><span class="tenue">Productos</span></p>
+      <h2 id="productos-title" class="productos-title" data-reveal="up">Seis líneas.<br><span class="ligero">Una sola medida: la tuya.</span></h2>
+    </div>
 
-  <div class="product-grid">
-
-    <article class="product-card">
-      <div class="product-img">
-        <img src="assets/jaula-ardilla-doble-entrada-1.jpg" alt="Jaula de ardilla industrial de doble entrada, rotor multiálabe de acero con acabado negro" width="619" height="1100" loading="lazy">
+    <article class="producto g12" id="producto-jaula-doble" aria-labelledby="ph-jaula-doble">
+      <div class="producto-texto">
+        <div class="producto-meta"><span class="eyebrow tenue">Línea 01 de 06</span><span class="eyebrow tenue ocultar-movil">Rodetes centrífugos</span></div>
+        <div class="producto-num">01<span class="cuadro" aria-hidden="true"></span></div>
+        <h3 id="ph-jaula-doble">Jaula de ardilla industrial doble entrada</h3>
+        <p>Álabes curvados hacia adelante y doble aspiración: alto caudal a baja presión en un cuerpo compacto.</p>
+        <dl class="producto-specs">
+          <dt>Aplicación</dt><dd>Manejadoras de aire, extracción, ventilación de naves</dd>
+          <dt>Medidas</dt><dd>A tu especificación</dd>
+        </dl>
+        <a class="link-flecha link-oscuro" href="#agenda" data-equipo="jaula-doble" aria-label="Cotizar este equipo: Jaula de ardilla industrial doble entrada"><span class="subraya">Cotizar este equipo</span> <span class="flecha" aria-hidden="true">→</span></a>
       </div>
-      <div class="product-body">
-        <h3>Jaula de ardilla industrial doble entrada</h3>
-        <p>Rotor multiálabe de doble aspiración para ventiladores centrífugos de gran caudal. Aspira por ambos costados, lo que permite mover más aire sin aumentar el diámetro del equipo.</p>
-        <ul class="product-specs">
-          <li>Configuración: doble entrada</li>
-          <li>Álabes: multiálabe curvado al frente</li>
-          <li>Construcción: acero con recubrimiento industrial negro</li>
-          <li>Cubo: barrenado y cuñero según tu eje</li>
-        </ul>
-        <a href="https://wa.me/5218131164776?text=Hola%2C%20quiero%20cotizar%20una%20Jaula%20de%20ardilla%20industrial%20doble%20entrada" target="_blank" rel="noopener" class="btn-quote">Cotizar por WhatsApp</a>
-      </div>
+      <figure class="producto-figura">
+        <div class="producto-media" data-reveal="img">
+          <div class="par" data-parallax="0.08"><img src="assets/jaula-ardilla-doble-entrada-2.jpg" alt="Jaula de ardilla industrial de doble entrada en acero pintado negro, vista lateral sobre piso de concreto" width="619" height="1100" loading="lazy" decoding="async" style="object-position: 50% 55%"></div>
+        </div>
+        <figcaption><span>Acabado negro industrial</span><span>01 / 06</span></figcaption>
+      </figure>
     </article>
 
-    <article class="product-card">
-      <div class="product-img">
-        <img src="assets/turbina-backward-inclined-1.jpg" alt="Turbina centrífuga backward inclined de construcción remachada" width="1100" height="882" loading="lazy">
+    <article class="producto g12" id="producto-backward" aria-labelledby="ph-backward">
+      <div class="producto-texto">
+        <div class="producto-meta"><span class="eyebrow tenue">Línea 02 de 06</span><span class="eyebrow tenue ocultar-movil">Rodetes centrífugos</span></div>
+        <div class="producto-num">02<span class="cuadro" aria-hidden="true"></span></div>
+        <h3 id="ph-backward">Turbina centrífuga backward inclined</h3>
+        <p>Álabes inclinados hacia atrás, remachados entre disco y anillo. Alta eficiencia y curva de potencia sin sobrecarga para procesos continuos.</p>
+        <dl class="producto-specs">
+          <dt>Aplicación</dt><dd>Procesos continuos, colectores de polvo, extracción</dd>
+          <dt>Medidas</dt><dd>A tu especificación</dd>
+        </dl>
+        <a class="link-flecha link-oscuro" href="#agenda" data-equipo="backward" aria-label="Cotizar este equipo: Turbina centrífuga backward inclined"><span class="subraya">Cotizar este equipo</span> <span class="flecha" aria-hidden="true">→</span></a>
       </div>
-      <div class="product-body">
-        <h3>Turbina centrífuga backward inclined</h3>
-        <p>Rotor de álabes inclinados hacia atrás, la opción de mayor eficiencia del catálogo. Menor consumo de motor y operación estable en sistemas de presión alta con aire limpio.</p>
-        <ul class="product-specs">
-          <li>Álabes: inclinados hacia atrás (backward inclined)</li>
-          <li>Construcción: remachada de alta resistencia</li>
-          <li>Cubo: maquinado con cuñero y opresores</li>
-          <li>Perfil: disco y tapa para flujo de alta eficiencia</li>
-        </ul>
-        <a href="https://wa.me/5218131164776?text=Hola%2C%20quiero%20cotizar%20una%20Turbina%20centr%C3%ADfuga%20backward%20inclined" target="_blank" rel="noopener" class="btn-quote">Cotizar por WhatsApp</a>
-      </div>
+      <figure class="producto-figura">
+        <div class="producto-media" data-reveal="img">
+          <div class="par" data-parallax="0.08"><img src="assets/turbina-backward-inclined-1.jpg" alt="Turbina centrífuga backward inclined de acero con maza bipartida y álabes remachados" width="1100" height="882" loading="lazy" decoding="async"></div>
+        </div>
+        <figcaption><span>Disco y anillo remachados</span><span>02 / 06</span></figcaption>
+      </figure>
     </article>
 
-    <article class="product-card">
-      <div class="product-img">
-        <img src="assets/jaula-ardilla-compacta.jpg" alt="Jaula de ardilla compacta de entrada simple para manejadoras y gabinetes de ventilación" width="825" height="1100" loading="lazy">
+    <article class="producto g12" id="producto-jaula-compacta" aria-labelledby="ph-jaula-compacta">
+      <div class="producto-texto">
+        <div class="producto-meta"><span class="eyebrow tenue">Línea 03 de 06</span><span class="eyebrow tenue ocultar-movil">Rodetes centrífugos</span></div>
+        <div class="producto-num">03<span class="cuadro" aria-hidden="true"></span></div>
+        <h3 id="ph-jaula-compacta">Jaula de ardilla compacta</h3>
+        <p>Rodete de simple entrada para espacios reducidos. Reponemos tu pieza con las medidas exactas de flecha y carcasa.</p>
+        <dl class="producto-specs">
+          <dt>Aplicación</dt><dd>Reposición de equipos, ventiladores compactos</dd>
+          <dt>Medidas</dt><dd>A tu especificación</dd>
+        </dl>
+        <a class="link-flecha link-oscuro" href="#agenda" data-equipo="jaula-compacta" aria-label="Cotizar este equipo: Jaula de ardilla compacta"><span class="subraya">Cotizar este equipo</span> <span class="flecha" aria-hidden="true">→</span></a>
       </div>
-      <div class="product-body">
-        <h3>Jaula de ardilla compacta</h3>
-        <p>Versión de entrada simple y cuerpo corto para equipos donde el espacio es la restricción principal: manejadoras, gabinetes de ventilación y extracciones locales.</p>
-        <ul class="product-specs">
-          <li>Configuración: entrada simple, cuerpo compacto</li>
-          <li>Álabes: multiálabe curvado al frente</li>
-          <li>Construcción: acero con recubrimiento industrial negro</li>
-          <li>Uso: manejadoras y gabinetes de ventilación</li>
-        </ul>
-        <a href="https://wa.me/5218131164776?text=Hola%2C%20quiero%20cotizar%20una%20Jaula%20de%20ardilla%20compacta" target="_blank" rel="noopener" class="btn-quote">Cotizar por WhatsApp</a>
-      </div>
+      <figure class="producto-figura">
+        <div class="producto-media" data-reveal="img">
+          <div class="par" data-parallax="0.08"><img src="assets/jaula-ardilla-compacta.jpg" alt="Jaula de ardilla compacta pintada en negro sobre banco de taller" width="825" height="1100" loading="lazy" decoding="async" style="object-position: 50% 45%"></div>
+        </div>
+        <figcaption><span>Terminado en taller</span><span>03 / 06</span></figcaption>
+      </figure>
     </article>
 
-    <article class="product-card">
-      <div class="product-img">
-        <img src="assets/ventilador-centrifugo-ensamblado.jpg" alt="Ventilador centrífugo industrial ensamblado con carcasa pintada, listo para instalar" width="506" height="1100" loading="lazy">
+    <article class="producto g12" id="producto-ensamblado" aria-labelledby="ph-ensamblado">
+      <div class="producto-texto">
+        <div class="producto-meta"><span class="eyebrow tenue">Línea 04 de 06</span><span class="eyebrow tenue ocultar-movil">Equipos completos</span></div>
+        <div class="producto-num">04<span class="cuadro" aria-hidden="true"></span></div>
+        <h3 id="ph-ensamblado">Ventilador centrífugo industrial ensamblado</h3>
+        <p>Equipo completo: carcasa, rodete, base y transmisión. Fabricado, pintado y listo para instalar.</p>
+        <dl class="producto-specs">
+          <dt>Aplicación</dt><dd>Extracción, inyección y procesos industriales</dd>
+          <dt>Medidas</dt><dd>A tu especificación</dd>
+        </dl>
+        <a class="link-flecha link-oscuro" href="#agenda" data-equipo="ensamblado" aria-label="Cotizar este equipo: Ventilador centrífugo industrial ensamblado"><span class="subraya">Cotizar este equipo</span> <span class="flecha" aria-hidden="true">→</span></a>
       </div>
-      <div class="product-body">
-        <h3>Ventilador centrífugo industrial ensamblado</h3>
-        <p>Equipo completo entregado armado: carcasa, rotor, flecha y base para motor. Llega listo para montar y conectar, sin trabajo de ensamble en sitio.</p>
-        <ul class="product-specs">
-          <li>Entrega: unidad ensamblada y probada en taller</li>
-          <li>Incluye: carcasa, rotor y base para motor</li>
-          <li>Acabado: pintura industrial</li>
-          <li>Descarga: orientación a definir según tu instalación</li>
-        </ul>
-        <a href="https://wa.me/5218131164776?text=Hola%2C%20quiero%20cotizar%20un%20Ventilador%20centr%C3%ADfugo%20industrial%20ensamblado" target="_blank" rel="noopener" class="btn-quote">Cotizar por WhatsApp</a>
-      </div>
+      <figure class="producto-figura">
+        <div class="producto-media" data-reveal="img">
+          <div class="par" data-parallax="0.08"><img src="assets/ventilador-centrifugo-ensamblado.jpg" alt="Ventilador centrífugo industrial ensamblado con carcasa azul y guarda roja sobre tarima" width="506" height="1100" loading="lazy" decoding="async" style="object-position: 60% 60%"></div>
+        </div>
+        <figcaption><span>Listo para embarque</span><span>04 / 06</span></figcaption>
+      </figure>
     </article>
 
-    <article class="product-card">
-      <div class="product-img">
-        <img src="assets/aspa-axial-6-palas.jpg" alt="Aspa axial industrial de 6 palas con acabado en pintura roja y maza central atornillada" width="825" height="1100" loading="lazy">
+    <article class="producto g12" id="producto-axial" aria-labelledby="ph-axial">
+      <div class="producto-texto">
+        <div class="producto-meta"><span class="eyebrow tenue">Línea 05 de 06</span><span class="eyebrow tenue ocultar-movil">Flujo axial</span></div>
+        <div class="producto-num">05<span class="cuadro" aria-hidden="true"></span></div>
+        <h3 id="ph-axial">Aspa axial industrial de 6 palas</h3>
+        <p>Seis palas atornilladas a maza central para mover grandes volúmenes de aire con bajo consumo.</p>
+        <dl class="producto-specs">
+          <dt>Aplicación</dt><dd>Torres de enfriamiento, condensadores, extracción</dd>
+          <dt>Medidas</dt><dd>A tu especificación</dd>
+        </dl>
+        <a class="link-flecha link-oscuro" href="#agenda" data-equipo="axial" aria-label="Cotizar este equipo: Aspa axial industrial de 6 palas"><span class="subraya">Cotizar este equipo</span> <span class="flecha" aria-hidden="true">→</span></a>
       </div>
-      <div class="product-body">
-        <h3>Aspa axial industrial de 6 palas</h3>
-        <p>Hélice axial para mover grandes volúmenes de aire a baja presión: torres de enfriamiento, extracción general de nave y ventilación de condensadores.</p>
-        <ul class="product-specs">
-          <li>Palas: 6, perfil axial</li>
-          <li>Montaje: maza central atornillada</li>
-          <li>Acabado: pintura industrial</li>
-          <li>Uso: gran caudal a baja presión</li>
-        </ul>
-        <a href="https://wa.me/5218131164776?text=Hola%2C%20quiero%20cotizar%20un%20Aspa%20axial%20industrial%20de%206%20palas" target="_blank" rel="noopener" class="btn-quote">Cotizar por WhatsApp</a>
-      </div>
+      <figure class="producto-figura">
+        <div class="producto-media" data-reveal="img">
+          <div class="par" data-parallax="0.08"><img src="assets/aspa-axial-6-palas.jpg" alt="Aspa axial industrial de seis palas pintada en rojo, vista superior sobre concreto" width="825" height="1100" loading="lazy" decoding="async" style="object-position: 53% 50%"></div>
+        </div>
+        <figcaption><span>Palas atornilladas a maza</span><span>05 / 06</span></figcaption>
+      </figure>
     </article>
 
-    <article class="product-card">
-      <div class="product-img">
-        <img src="assets/rotor-radial-alta-presion.jpg" alt="Rotores de alta presión tipo radial fabricados en serie" width="825" height="1100" loading="lazy">
+    <article class="producto g12" id="producto-radial" aria-labelledby="ph-radial">
+      <div class="producto-texto">
+        <div class="producto-meta"><span class="eyebrow tenue">Línea 06 de 06</span><span class="eyebrow tenue ocultar-movil">Alta presión</span></div>
+        <div class="producto-num">06<span class="cuadro" aria-hidden="true"></span></div>
+        <h3 id="ph-radial">Rotor de alta presión tipo radial</h3>
+        <p>Álabes radiales soldados, robustos ante polvo y partículas. Para transporte neumático y procesos de alta presión.</p>
+        <dl class="producto-specs">
+          <dt>Aplicación</dt><dd>Transporte neumático, hornos, aire con partículas</dd>
+          <dt>Medidas</dt><dd>A tu especificación</dd>
+        </dl>
+        <a class="link-flecha link-oscuro" href="#agenda" data-equipo="radial" aria-label="Cotizar este equipo: Rotor de alta presión tipo radial"><span class="subraya">Cotizar este equipo</span> <span class="flecha" aria-hidden="true">→</span></a>
       </div>
-      <div class="product-body">
-        <h3>Rotor de alta presión tipo radial</h3>
-        <p>Álabes rectos radiales, la geometría más robusta del catálogo. Diseñada para presión estática alta y para aire con polvo, viruta o material en suspensión.</p>
-        <ul class="product-specs">
-          <li>Álabes: radiales rectos</li>
-          <li>Diseño: alta presión estática</li>
-          <li>Uso: aire con partículas y transporte neumático</li>
-          <li>Producción: series repetibles del mismo modelo</li>
-        </ul>
-        <a href="https://wa.me/5218131164776?text=Hola%2C%20quiero%20cotizar%20un%20Rotor%20de%20alta%20presi%C3%B3n%20tipo%20radial" target="_blank" rel="noopener" class="btn-quote">Cotizar por WhatsApp</a>
-      </div>
+      <figure class="producto-figura">
+        <div class="producto-media" data-reveal="img">
+          <div class="par" data-parallax="0.08"><img src="assets/rotor-radial-alta-presion.jpg" alt="Lote de rotores radiales de alta presión pintados en negro, alineados en el taller" width="825" height="1100" loading="lazy" decoding="async"></div>
+        </div>
+        <figcaption><span>Lote de producción</span><span>06 / 06</span></figcaption>
+      </figure>
     </article>
-
   </div>
 </section>
 
-<!-- ============================= GALERÍA DE FABRICACIÓN ============================= -->
-<section class="galeria" id="galeria">
-  <div class="section-header">
-    <h2>Galería de Fabricación</h2>
-    <p>Equipos reales salidos de nuestro taller</p>
-  </div>
-
-  <div class="galeria-grid">
-    <figure class="galeria-item">
-      <img src="assets/jaula-ardilla-doble-entrada-1.jpg" alt="Vista frontal de jaula de ardilla industrial de doble entrada" width="619" height="1100" loading="lazy">
-      <figcaption>Jaula de ardilla doble entrada &mdash; vista frontal</figcaption>
-    </figure>
-    <figure class="galeria-item">
-      <img src="assets/jaula-ardilla-doble-entrada-2.jpg" alt="Vista lateral de jaula de ardilla industrial de doble entrada" width="619" height="1100" loading="lazy">
-      <figcaption>Jaula de ardilla doble entrada &mdash; vista lateral</figcaption>
-    </figure>
-    <figure class="galeria-item">
-      <img src="assets/turbina-backward-inclined-1.jpg" alt="Turbina centrífuga backward inclined vista desde la entrada" width="1100" height="882" loading="lazy">
-      <figcaption>Backward inclined &mdash; entrada del rotor</figcaption>
-    </figure>
-    <figure class="galeria-item">
-      <img src="assets/turbina-backward-inclined-2.jpg" alt="Turbina centrífuga backward inclined vista de perfil" width="825" height="1100" loading="lazy">
-      <figcaption>Backward inclined &mdash; perfil del rotor</figcaption>
-    </figure>
-    <figure class="galeria-item">
-      <img src="assets/jaula-ardilla-compacta.jpg" alt="Jaula de ardilla compacta terminada en taller" width="825" height="1100" loading="lazy">
-      <figcaption>Jaula de ardilla compacta</figcaption>
-    </figure>
-    <figure class="galeria-item">
-      <img src="assets/ventilador-centrifugo-ensamblado.jpg" alt="Ventilador centrífugo industrial ensamblado sobre tarima, listo para envío" width="506" height="1100" loading="lazy">
-      <figcaption>Ventilador centrífugo ensamblado</figcaption>
-    </figure>
-    <figure class="galeria-item">
-      <img src="assets/aspa-axial-6-palas.jpg" alt="Aspa axial industrial de 6 palas terminada" width="825" height="1100" loading="lazy">
-      <figcaption>Aspa axial de 6 palas</figcaption>
-    </figure>
-    <figure class="galeria-item">
-      <img src="assets/rotor-radial-alta-presion.jpg" alt="Lote de rotores de alta presión tipo radial" width="825" height="1100" loading="lazy">
-      <figcaption>Rotores radiales de alta presión</figcaption>
-    </figure>
-  </div>
-</section>
-
-<!-- ============================= NOSOTROS ============================= -->
-<section class="nosotros" id="nosotros">
-  <div class="nosotros-text">
-    <h2>Sobre ARTRESSA</h2>
-    <p>En <strong>ARTRESSA</strong> diseñamos y fabricamos turbinas, rotores y ventiladores industriales a medida. Cada pieza sale de taller ajustada al equipo del cliente: diámetro, ancho, tipo de álabe, medida de eje y acabado.</p>
-    <p>Trabajamos con plantas de proceso, sistemas de climatización y extracción, torres de enfriamiento y equipos de transporte neumático, tanto en fabricación de equipo nuevo como en reposición de rotores existentes.</p>
-    <div class="nosotros-values">
-      <div class="value"><strong>Crea</strong><span>Fabricamos desde cero la pieza que tu equipo necesita, sin depender de un catálogo cerrado.</span></div>
-      <div class="value"><strong>Innova</strong><span>Elegimos la geometría de álabe correcta para cada aplicación: caudal, presión o aire con partículas.</span></div>
-      <div class="value"><strong>Soluciona</strong><span>Reponemos rotores fuera de línea a partir de la pieza física, un plano o las medidas de tu equipo.</span></div>
+<!-- ============================= 04 PROCESO ============================= -->
+<section class="seccion proceso" id="proceso" aria-labelledby="proceso-title">
+  <div class="wrap">
+    <div class="g12 seccion-cabeza proceso-cabeza">
+      <p class="eyebrow seccion-eyebrow"><span class="num-ambar">04</span><span class="tenue-claro">Proceso</span></p>
+      <h2 id="proceso-title" class="proceso-title" data-reveal="up">De la primera cita <span class="ligero">a la entrega.</span></h2>
+      <div class="proceso-disco ocultar-movil">
+        <div class="disco" data-rotate="0.06">
+          <img src="assets/jaula-ardilla-doble-entrada-1.jpg" alt="" width="619" height="1100" loading="lazy" style="object-position: 52% 46%; transform: scale(1.75)">
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="nosotros-visual nosotros-visual-logo">
-    <img src="assets/logo-artressa.png" alt="Logotipo ARTRESSA — Crea, Innova, Soluciona" width="636" height="620" loading="lazy">
-  </div>
-</section>
-
-<!-- ============================= SECTORES QUE ATENDEMOS ============================= -->
-<section class="clientes">
-  <p class="clientes-title">Sectores que atendemos</p>
-  <div class="clientes-grid">
-    <div class="cliente-logo">Climatización y HVAC</div>
-    <div class="cliente-logo">Extracción industrial</div>
-    <div class="cliente-logo">Torres de enfriamiento</div>
-    <div class="cliente-logo">Transporte neumático</div>
-    <div class="cliente-logo">Hornos y secado</div>
-    <div class="cliente-logo">Minería y cementeras</div>
-  </div>
-</section>
-
-<!-- ============================= FAQ ============================= -->
-<section class="faq" id="faq">
-  <div class="section-header">
-    <h2>Preguntas Frecuentes</h2>
-    <p>Lo que más nos preguntan antes de mandar fabricar una turbina</p>
-  </div>
-
-  <div class="faq-list">
-    <div class="faq-item">
-      <button class="faq-question">¿Qué turbinas y rotores fabrican? <span>+</span></button>
-      <div class="faq-answer"><p>Nuestro catálogo incluye jaula de ardilla industrial de doble entrada, jaula de ardilla compacta, turbinas centrífugas backward inclined, ventiladores centrífugos industriales ensamblados, aspas axiales de 6 palas y rotores de alta presión tipo radial.</p></div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question">¿Fabrican turbinas a medida o réplicas de un rotor existente? <span>+</span></button>
-      <div class="faq-answer"><p>Sí. Fabricamos bajo especificación a partir de un plano, de las dimensiones del equipo o de la pieza física que quieras reemplazar, respetando diámetro, ancho, número de álabes y medida del eje.</p></div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question">¿Cuál es la diferencia entre una jaula de ardilla y una backward inclined? <span>+</span></button>
-      <div class="faq-answer"><p>La jaula de ardilla es multiálabe con álabes curvados al frente: entrega gran caudal a presión moderada y en poco espacio. La backward inclined tiene álabes inclinados hacia atrás, ofrece mayor eficiencia y menor consumo del motor, y trabaja mejor a presiones altas con aire limpio.</p></div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question">¿Qué materiales y acabados manejan? <span>+</span></button>
-      <div class="faq-answer"><p>Los equipos del catálogo se fabrican en acero al carbón con recubrimiento industrial y en construcción remachada de aleación ligera. El material y el acabado final se definen según la temperatura, la abrasión y el tipo de aire que va a manejar el equipo.</p></div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question">¿Cuánto cuesta una turbina industrial? <span>+</span></button>
-      <div class="faq-answer"><p>El precio depende del diámetro, el ancho, el tipo de álabe, el material y el acabado. Envíanos las medidas o una foto de tu equipo por WhatsApp y te cotizamos sin costo.</p></div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question">¿Cuál es el tiempo de entrega? <span>+</span></button>
-      <div class="faq-answer"><p>Depende del modelo, las dimensiones y la carga de taller al momento del pedido. El tiempo de entrega se confirma por escrito junto con la cotización.</p></div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question">¿Hacen envíos a toda la República Mexicana? <span>+</span></button>
-      <div class="faq-answer"><p>Sí, coordinamos el envío a cualquier punto del país. El costo se calcula según el destino, el peso y las dimensiones del equipo.</p></div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question">¿Cómo solicito una cotización? <span>+</span></button>
-      <div class="faq-answer"><p>Escríbenos por WhatsApp o llena el formulario de contacto indicando el tipo de equipo y sus medidas. Entre más datos y fotos nos compartas, más precisa será la cotización.</p></div>
+    <ol class="pasos">
+      <li data-reveal="up">
+        <div class="paso-linea"><span data-reveal="line"></span></div>
+        <div class="paso-num">01</div>
+        <h3>Cita</h3>
+        <p>Agendas en línea: visita en planta, visita técnica, llamada o videollamada.</p>
+      </li>
+      <li data-reveal="up">
+        <div class="paso-linea"><span data-reveal="line"></span></div>
+        <div class="paso-num">02</div>
+        <h3>Revisión técnica y medidas</h3>
+        <p>Revisamos la aplicación y tomamos medidas en sitio o sobre tu pieza actual.</p>
+      </li>
+      <li data-reveal="up">
+        <div class="paso-linea"><span data-reveal="line"></span></div>
+        <div class="paso-num">03</div>
+        <h3>Cotización</h3>
+        <p>Recibes una propuesta clara con especificación, precio y tiempo de entrega.</p>
+      </li>
+      <li data-reveal="up">
+        <div class="paso-linea"><span data-reveal="line"></span></div>
+        <div class="paso-num">04</div>
+        <h3>Fabricación y entrega</h3>
+        <p>Fabricamos en nuestro taller y entregamos el equipo listo para instalar.</p>
+      </li>
+    </ol>
+    <div class="proceso-cta" data-reveal="up">
+      <p>El primer paso no tiene costo: agenda y revisamos tu equipo contigo.</p>
+      <a class="link-flecha" href="#agenda"><span class="subraya">Agenda tu cita</span> <span class="flecha" aria-hidden="true">→</span></a>
     </div>
   </div>
 </section>
 
-<!-- ============================= CONTACTO / FORMULARIO ============================= -->
-<section class="contacto" id="contacto">
-  <div class="section-header">
-    <h2>Solicita tu Cotización</h2>
-    <p>Completa el formulario y tu mensaje se enviará directo a nuestro WhatsApp</p>
+<!-- ============================= 05 TALLER / GALERÍA ============================= -->
+<!-- En escritorio la pista se desplaza en horizontal con el scroll; en celular es un carrusel deslizable -->
+<section class="galeria" id="taller" aria-labelledby="taller-title">
+  <div class="galeria-sticky">
+    <div class="wrap g12 galeria-cabeza">
+      <p class="eyebrow seccion-eyebrow"><span class="num-ambar">05</span><span class="tenue-claro">Taller</span></p>
+      <h2 id="taller-title" class="galeria-title">Hecho en nuestro taller, <span class="ligero">pieza por pieza.</span></h2>
+      <p class="galeria-hint ocultar-movil">Desliza para recorrer →</p>
+    </div>
+    <div class="galeria-track" id="galeriaTrack" tabindex="0" role="region" aria-label="Galería de fabricación">
+      <figure class="galeria-item">
+        <div class="galeria-img"><img src="assets/jaula-ardilla-doble-entrada-1.jpg" alt="Vista frontal de jaula de ardilla negra con maza central y tirantes" width="619" height="1100" loading="lazy" decoding="async"></div>
+        <figcaption><span>01</span><span>Jaula de ardilla con maza y tirantes de refuerzo.</span></figcaption>
+      </figure>
+      <figure class="galeria-item">
+        <div class="galeria-img es-ancha"><img src="assets/turbina-backward-inclined-1.jpg" alt="Detalle de turbina backward inclined con remaches en disco de acero" width="1100" height="882" loading="lazy" decoding="async"></div>
+        <figcaption><span>02</span><span>Turbina backward inclined: cada remache, alineado.</span></figcaption>
+      </figure>
+      <figure class="galeria-item">
+        <div class="galeria-img"><img src="assets/turbina-backward-inclined-2.jpg" alt="Rodete metálico de álabes rectos con anillo remachado sobre caja de camioneta" width="825" height="1100" loading="lazy" decoding="async"></div>
+        <figcaption><span>03</span><span>Rodete de álabes rectos con anillo remachado.</span></figcaption>
+      </figure>
+      <figure class="galeria-item">
+        <div class="galeria-img"><img src="assets/jaula-ardilla-compacta.jpg" alt="Jaula de ardilla negra sobre banco de trabajo en el taller" width="825" height="1100" loading="lazy" decoding="async"></div>
+        <figcaption><span>04</span><span>Jaula de ardilla terminada en el taller.</span></figcaption>
+      </figure>
+      <figure class="galeria-item">
+        <div class="galeria-img"><img src="assets/rotor-radial-alta-presion.jpg" alt="Diez rotores radiales negros alineados en el piso del taller" width="825" height="1100" loading="lazy" decoding="async"></div>
+        <figcaption><span>05</span><span>Rotores radiales listos para entrega.</span></figcaption>
+      </figure>
+      <figure class="galeria-item">
+        <div class="galeria-img"><img src="assets/jaula-ardilla-doble-entrada-2.jpg" alt="Jaula de ardilla de doble entrada negra recostada sobre el piso" width="619" height="1100" loading="lazy" decoding="async" style="object-position: 50% 60%"></div>
+        <figcaption><span>06</span><span>Doble entrada, pintura de acabado industrial.</span></figcaption>
+      </figure>
+    </div>
   </div>
+</section>
 
-  <div class="contact-wrapper">
-    <form id="quoteForm" class="quote-form">
-      <label for="nombre">Nombre completo *</label>
-      <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+<!-- ============================= 06 NOSOTROS ============================= -->
+<section class="seccion nosotros" id="nosotros" aria-labelledby="nosotros-title">
+  <div class="wrap g12">
+    <p class="eyebrow seccion-eyebrow"><span>06</span><span class="tenue">Nosotros</span></p>
+    <div class="nosotros-intro">
+      <h2 id="nosotros-title" class="sr-only">Nosotros</h2>
+      <p data-reveal="up">Un equipo industrial bien hecho no se elige de catálogo. <span class="ligero tenue">Se diseña para el lugar donde va a trabajar, se fabrica con precisión y se entrega listo para girar.</span></p>
+    </div>
+  </div>
+  <div class="wrap g12 nosotros-cuerpo">
+    <div class="nosotros-disco">
+      <div class="disco" data-rotate="0.045">
+        <img src="assets/aspa-axial-6-palas.jpg" alt="Aspa axial industrial de seis palas pintada en rojo, vista superior" width="825" height="1100" loading="lazy" style="object-position: 53% 49%; transform: scale(1.38)">
+      </div>
+    </div>
+    <div class="nosotros-texto">
+      <div class="valores">
+        <div class="valor" data-reveal="up">Crea<span class="valor-num">I</span></div>
+        <div class="valor ligero" data-reveal="up">Innova<span class="valor-num">II</span></div>
+        <div class="valor" data-reveal="up">Soluciona<span class="punto">.</span></div>
+      </div>
+      <p>Desde hace 15 años diseñamos y fabricamos turbinas, rotores y ventiladores para la industria. Escuchamos el problema, medimos en sitio y construimos la pieza exacta: ni más grande, ni más cara de lo necesario.</p>
+    </div>
+  </div>
+</section>
 
-      <label for="empresa">Empresa</label>
-      <input type="text" id="empresa" name="empresa" placeholder="Nombre de tu empresa">
+<!-- ============================= 07 FAQ ============================= -->
+<section class="seccion faq" id="faq" aria-labelledby="faq-title">
+  <div class="wrap g12">
+    <div class="faq-cabeza">
+      <p class="eyebrow seccion-eyebrow"><span>07</span><span class="tenue">Preguntas frecuentes</span></p>
+      <h2 id="faq-title">Antes de <span class="ligero">cotizar.</span></h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item is-open">
+        <h3><button class="faq-question" type="button" id="faq-b0" aria-expanded="true" aria-controls="faq-p0"><span>¿Fabrican con las medidas de mi equipo actual?</span><span class="mas-menos" aria-hidden="true"></span></button></h3>
+        <div class="faq-answer" id="faq-p0" role="region" aria-labelledby="faq-b0">Sí. Tomamos medidas en sitio o usamos tu pieza dañada como muestra para reproducirla con las dimensiones exactas de flecha, diámetro y ancho.</div>
+      </div>
+      <div class="faq-item">
+        <h3><button class="faq-question" type="button" id="faq-b1" aria-expanded="false" aria-controls="faq-p1"><span>¿Puedo cotizar si no conozco las medidas?</span><span class="mas-menos" aria-hidden="true"></span></button></h3>
+        <div class="faq-answer" id="faq-p1" role="region" aria-labelledby="faq-b1" hidden>Sí. Elige «No estoy seguro / necesito asesoría» en el formulario y agendamos una revisión técnica para definir el equipo correcto.</div>
+      </div>
+      <div class="faq-item">
+        <h3><button class="faq-question" type="button" id="faq-b2" aria-expanded="false" aria-controls="faq-p2"><span>¿Cuánto tarda la fabricación?</span><span class="mas-menos" aria-hidden="true"></span></button></h3>
+        <div class="faq-answer" id="faq-p2" role="region" aria-labelledby="faq-b2" hidden>Depende del tipo de equipo, el tamaño y la cantidad. El tiempo de entrega queda por escrito en tu cotización antes de iniciar.</div>
+      </div>
+      <div class="faq-item">
+        <h3><button class="faq-question" type="button" id="faq-b3" aria-expanded="false" aria-controls="faq-p3"><span>¿Qué materiales y acabados manejan?</span><span class="mas-menos" aria-hidden="true"></span></button></h3>
+        <div class="faq-answer" id="faq-p3" role="region" aria-labelledby="faq-b3" hidden>Trabajamos acero al carbón, lámina galvanizada y aluminio, con acabado en pintura industrial. En la revisión técnica definimos el material ideal para tu aplicación.</div>
+      </div>
+      <div class="faq-item">
+        <h3><button class="faq-question" type="button" id="faq-b4" aria-expanded="false" aria-controls="faq-p4"><span>¿Hacen visitas a planta?</span><span class="mas-menos" aria-hidden="true"></span></button></h3>
+        <div class="faq-answer" id="faq-p4" role="region" aria-labelledby="faq-b4" hidden>Sí. Al agendar puedes elegir visita en planta, visita técnica, llamada o videollamada.</div>
+      </div>
+      <div class="faq-item">
+        <h3><button class="faq-question" type="button" id="faq-b5" aria-expanded="false" aria-controls="faq-p5"><span>¿Cómo se envía mi solicitud?</span><span class="mas-menos" aria-hidden="true"></span></button></h3>
+        <div class="faq-answer" id="faq-p5" role="region" aria-labelledby="faq-b5" hidden>Al terminar el formulario se abre WhatsApp con todos tus datos listos. Solo envía el mensaje y te confirmamos la cita.</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <label for="telefono">Teléfono *</label>
-      <input type="tel" id="telefono" name="telefono" required placeholder="Ej. 5512345678">
+<!-- ============================= 08 AGENDA / FORMULARIO ============================= -->
+<section class="seccion agenda" id="agenda" aria-labelledby="agenda-title">
+  <div class="wrap g12">
+    <div class="agenda-intro">
+      <p class="eyebrow"><span class="num-ambar">08</span> <span class="tenue-claro">Agenda tu cita</span></p>
+      <h2 id="agenda-title">Agenda tu <span class="ligero">cotización.</span></h2>
+      <p class="agenda-lead">Cuéntanos qué necesitas en tres pasos. Al enviar, abrimos WhatsApp con tus datos para confirmar la cita.</p>
+      <dl class="agenda-contacto">
+        <div><dt>Correo</dt><dd><a class="link-flecha" href="mailto:contacto@artressa.com.mx"><span class="subraya">contacto@artressa.com.mx</span></a></dd></div>
+        <div><dt>Teléfono</dt><dd><a class="link-flecha" href="tel:+528131164776"><span class="subraya">+52 81 3116 4776</span></a></dd></div>
+      </dl>
+    </div>
 
-      <label for="email">Correo electrónico</label>
-      <input type="email" id="email" name="email" placeholder="tucorreo@empresa.com">
+    <div class="agenda-form">
+      <!-- Confirmación (se muestra al enviar) -->
+      <div class="enviado entra" id="formEnviado" role="status" aria-live="polite" hidden>
+        <p class="eyebrow num-ambar">Solicitud lista</p>
+        <p class="enviado-titulo">Gracias, <span id="envNombre"></span>. <span class="ligero">Abrimos WhatsApp con tus datos.</span></p>
+        <p class="enviado-texto">Envía el mensaje para confirmar tu cita del <span id="envFecha"></span> (<span id="envHorario"></span>). Te responderemos para confirmar día y hora.</p>
+        <div class="enviado-acciones">
+          <a class="link-flecha" id="envWhatsapp" href="https://wa.me/5218131164776" target="_blank" rel="noopener"><span class="subraya">Abrir WhatsApp de nuevo</span> <span class="flecha" aria-hidden="true">→</span></a>
+          <button class="btn-atras" id="formReiniciar" type="button">Agendar otra cita</button>
+        </div>
+      </div>
 
-      <label for="tipo">Equipo de interés *</label>
-      <select id="tipo" name="tipo" required>
-        <option value="">Selecciona una opción</option>
-        <option value="Jaula de ardilla industrial doble entrada">Jaula de ardilla industrial doble entrada</option>
-        <option value="Turbina centrífuga backward inclined">Turbina centrífuga backward inclined</option>
-        <option value="Jaula de ardilla compacta">Jaula de ardilla compacta</option>
-        <option value="Ventilador centrífugo industrial ensamblado">Ventilador centrífugo industrial ensamblado</option>
-        <option value="Aspa axial industrial de 6 palas">Aspa axial industrial de 6 palas</option>
-        <option value="Rotor de alta presión tipo radial">Rotor de alta presión tipo radial</option>
-        <option value="No estoy seguro">No estoy seguro / Necesito asesoría</option>
-      </select>
+      <form id="quoteForm" novalidate aria-labelledby="agenda-title">
+        <div class="pasos-barra" role="group" id="pasosBarra" aria-label="Paso 1 de 3">
+          <div class="is-on"><div class="seg"><span></span></div><div class="seg-label"><span>01</span><span class="ocultar-movil">Contacto</span></div></div>
+          <div><div class="seg"><span></span></div><div class="seg-label"><span>02</span><span class="ocultar-movil">Proyecto</span></div></div>
+          <div><div class="seg"><span></span></div><div class="seg-label"><span>03</span><span class="ocultar-movil">Cita</span></div></div>
+        </div>
 
-      <label for="medidas">Medidas del equipo</label>
-      <input type="text" id="medidas" name="medidas" placeholder="Ej. diámetro 30&quot;, ancho 12&quot;, eje 1 1/2&quot;">
+        <div class="equipo-chip" id="equipoChip" hidden><span class="cuadro" aria-hidden="true"></span>Equipo: <span id="equipoChipTxt"></span></div>
 
-      <label for="mensaje">Cuéntanos tu proyecto</label>
-      <textarea id="mensaje" name="mensaje" rows="4" placeholder="Aplicación, tipo de aire, temperatura, ubicación del proyecto, etc."></textarea>
+        <!-- Paso 1 -->
+        <fieldset class="form-paso entra" data-paso="1">
+          <legend class="sr-only">Paso 1 de 3: datos de contacto</legend>
+          <div class="campo">
+            <label class="campo-label" for="nombre">Nombre *</label>
+            <input class="campo-input" id="nombre" name="nombre" type="text" autocomplete="name" placeholder="Nombre y apellido" required aria-describedby="e-nombre">
+            <span class="campo-error" id="e-nombre"></span>
+          </div>
+          <div class="campo">
+            <label class="campo-label" for="empresa">Empresa</label>
+            <input class="campo-input" id="empresa" name="empresa" type="text" autocomplete="organization" placeholder="Opcional">
+          </div>
+          <div class="campos-dos">
+            <div class="campo">
+              <label class="campo-label" for="telefono">Teléfono *</label>
+              <input class="campo-input" id="telefono" name="telefono" type="tel" inputmode="tel" autocomplete="tel" placeholder="10 dígitos" required aria-describedby="e-telefono">
+              <span class="campo-error" id="e-telefono"></span>
+            </div>
+            <div class="campo">
+              <label class="campo-label" for="correo">Correo</label>
+              <input class="campo-input" id="correo" name="correo" type="email" inputmode="email" autocomplete="email" placeholder="nombre@empresa.com" aria-describedby="e-correo">
+              <span class="campo-error" id="e-correo"></span>
+            </div>
+          </div>
+          <div class="form-nav fin">
+            <button class="btn-borde" type="button" data-accion="siguiente">Continuar <span class="flecha" aria-hidden="true">→</span></button>
+          </div>
+        </fieldset>
 
-      <button type="submit" class="btn-primary btn-submit">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.2-.7.9-.9 1.1-.2.2-.3.2-.6.1-1.6-.8-2.6-1.4-3.7-3.2-.3-.5.3-.5.8-1.6.1-.2 0-.4-.1-.6-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.1 0 1.2.9 2.4 1 2.6.1.2 1.8 2.9 4.5 4 2.7 1.1 2.7.7 3.2.7.5 0 1.6-.6 1.8-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.4-.3zM12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.8-1.5C8.3 21.5 10.1 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
-        Enviar por WhatsApp
-      </button>
-      <p class="form-note">Al enviar, se abrirá WhatsApp con tu solicitud lista para enviar.</p>
-    </form>
+        <!-- Paso 2 -->
+        <fieldset class="form-paso entra" data-paso="2" hidden>
+          <legend class="sr-only">Paso 2 de 3: tu proyecto</legend>
+          <div class="campo">
+            <label class="campo-label" for="equipo">Equipo de interés *</label>
+            <select class="campo-input" id="equipo" name="equipo" required aria-describedby="e-equipo">
+              <option value="" disabled selected>Selecciona un equipo</option>
+              <option value="jaula-doble">Jaula de ardilla industrial doble entrada</option>
+              <option value="backward">Turbina centrífuga backward inclined</option>
+              <option value="jaula-compacta">Jaula de ardilla compacta</option>
+              <option value="ensamblado">Ventilador centrífugo industrial ensamblado</option>
+              <option value="axial">Aspa axial industrial de 6 palas</option>
+              <option value="radial">Rotor de alta presión tipo radial</option>
+              <option value="asesoria">No estoy seguro / necesito asesoría</option>
+            </select>
+            <span class="campo-error" id="e-equipo"></span>
+          </div>
+          <div class="campo">
+            <label class="campo-label" for="medidas">Medidas</label>
+            <input class="campo-input" id="medidas" name="medidas" type="text" placeholder="Diámetro, ancho, flecha… si las conoces">
+          </div>
+          <div class="campo">
+            <label class="campo-label" for="descripcion">Descripción del proyecto</label>
+            <textarea class="campo-input" id="descripcion" name="descripcion" rows="4" placeholder="Aplicación, equipo actual, cantidad…"></textarea>
+          </div>
+          <div class="form-nav">
+            <button class="btn-atras" type="button" data-accion="atras">← Atrás</button>
+            <button class="btn-borde" type="button" data-accion="siguiente">Continuar <span class="flecha" aria-hidden="true">→</span></button>
+          </div>
+        </fieldset>
 
-    <div class="contact-info">
-      <h3>Contáctanos directamente</h3>
-      <p><strong>WhatsApp / Tel:</strong> <a href="tel:+5218131164776">+52 1 81 3116 4776</a></p>
-      <p><strong>Correo:</strong> <a href="mailto:contacto@artressa.com.mx">contacto@artressa.com.mx</a></p>
-      <p><strong>Ubicación:</strong> Privada Álamo 3048, Col. Moderna, Monterrey, N.L.</p>
-      <p><strong>Horario:</strong> Lunes a Viernes, 9:00–18:00 hrs</p>
-      <p class="contact-tip">Tip: manda una foto del rotor que quieres reemplazar junto con su diámetro y la medida del eje. Con eso podemos cotizarte mucho más rápido.</p>
+        <!-- Paso 3 -->
+        <fieldset class="form-paso entra" data-paso="3" hidden>
+          <legend class="sr-only">Paso 3 de 3: tu cita</legend>
+          <div class="campo" role="radiogroup" aria-labelledby="l-tipo" aria-describedby="e-tipo">
+            <span class="campo-label" id="l-tipo">Tipo de cita *</span>
+            <div class="chips">
+              <label class="chip"><input class="sr-only" type="radio" name="tipo" value="Visita en planta"><span>Visita en planta</span></label>
+              <label class="chip"><input class="sr-only" type="radio" name="tipo" value="Visita técnica"><span>Visita técnica</span></label>
+              <label class="chip"><input class="sr-only" type="radio" name="tipo" value="Llamada"><span>Llamada</span></label>
+              <label class="chip"><input class="sr-only" type="radio" name="tipo" value="Videollamada"><span>Videollamada</span></label>
+            </div>
+            <span class="campo-error" id="e-tipo"></span>
+          </div>
+          <div class="campos-dos">
+            <div class="campo">
+              <label class="campo-label" for="fecha">Fecha preferida *</label>
+              <input class="campo-input" id="fecha" name="fecha" type="date" required aria-describedby="e-fecha h-fecha">
+              <span class="campo-ayuda" id="h-fecha">Lunes a sábado</span>
+              <span class="campo-error" id="e-fecha"></span>
+            </div>
+            <div class="campo" role="radiogroup" aria-labelledby="l-horario" aria-describedby="e-horario">
+              <span class="campo-label" id="l-horario">Horario *</span>
+              <div class="chips chips-fijo">
+                <label class="chip"><input class="sr-only" type="radio" name="horario" value="Mañana"><span>Mañana</span></label>
+                <label class="chip"><input class="sr-only" type="radio" name="horario" value="Tarde"><span>Tarde</span></label>
+              </div>
+              <span class="campo-error" id="e-horario"></span>
+            </div>
+          </div>
+          <div class="form-nav form-nav-final">
+            <button class="btn-atras" type="button" data-accion="atras">← Atrás</button>
+            <button class="btn btn-lg" type="submit">Agenda tu cotización</button>
+          </div>
+          <p class="form-note">Al enviar se abrirá WhatsApp con tu solicitud lista para mandar.</p>
+        </fieldset>
+      </form>
     </div>
   </div>
 </section>
@@ -505,35 +658,43 @@
 
 <!-- ============================= FOOTER ============================= -->
 <footer class="footer">
-  <div class="footer-container">
-    <div class="footer-col">
-      <img class="footer-logo" src="assets/logo-artressa-blanco.png" alt="Logo ARTRESSA" width="110" height="107" loading="lazy">
-      <p>Fabricación de turbinas, rotores y ventiladores industriales a medida. Crea &middot; Innova &middot; Soluciona.</p>
+  <div class="wrap g12">
+    <div class="footer-logo">
+      <img src="assets/logo-artressa-blanco.png" alt="ARTRESSA — Crea, Innova, Soluciona" width="180" height="175" loading="lazy">
     </div>
-    <div class="footer-col">
-      <h4>Navegación</h4>
-      <a href="#inicio">Inicio</a>
-      <a href="#productos">Productos</a>
-      <a href="#galeria">Galería</a>
-      <a href="#nosotros">Nosotros</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contacto">Contacto</a>
-    </div>
-    <div class="footer-col">
-      <h4>Contacto</h4>
-      <a href="https://wa.me/5218131164776" target="_blank" rel="noopener">WhatsApp</a>
-      <a href="mailto:contacto@artressa.com.mx">contacto@artressa.com.mx</a>
-      <a href="tel:+5218131164776">+52 1 81 3116 4776</a>
+    <nav class="footer-col footer-sitio" aria-label="Pie de página">
+      <p class="eyebrow tenue-claro">Sitio</p>
+      <ul>
+        <li><a class="link-flecha" href="#productos">Productos</a></li>
+        <li><a class="link-flecha" href="#proceso">Proceso</a></li>
+        <li><a class="link-flecha" href="#taller">Taller</a></li>
+        <li><a class="link-flecha" href="#nosotros">Nosotros</a></li>
+        <li><a class="link-flecha" href="#faq">Preguntas frecuentes</a></li>
+      </ul>
+    </nav>
+    <div class="footer-col footer-contacto">
+      <p class="eyebrow tenue-claro">Contacto</p>
+      <ul>
+        <li><a class="link-flecha" href="mailto:contacto@artressa.com.mx"><span class="subraya">contacto@artressa.com.mx</span></a></li>
+        <li><a class="link-flecha" href="tel:+528131164776"><span class="subraya">+52 81 3116 4776</span></a></li>
+        <li><a class="link-flecha" href="https://wa.me/5218131164776" target="_blank" rel="noopener"><span class="subraya">WhatsApp</span> <span class="flecha" aria-hidden="true">→</span></a></li>
+      </ul>
+      <a class="btn footer-cta" href="#agenda">Agenda tu cotización</a>
     </div>
   </div>
-  <div class="footer-bottom">
-    <p>&copy; <span id="year"></span> ARTRESSA. Todos los derechos reservados.</p>
+  <div class="wrap">
+    <div class="footer-bottom">
+      <span>&copy; <span id="year">2026</span> ARTRESSA. Todos los derechos reservados.</span>
+      <span>Crea · Innova · Soluciona</span>
+      <span>artressa.com.mx</span>
+    </div>
   </div>
 </footer>
 
 <!-- Botón flotante de WhatsApp -->
-<a href="https://wa.me/5218131164776?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20turbinas%20y%20rotores%20industriales" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chatear por WhatsApp">
-  <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.2-.7.9-.9 1.1-.2.2-.3.2-.6.1-1.6-.8-2.6-1.4-3.7-3.2-.3-.5.3-.5.8-1.6.1-.2 0-.4-.1-.6-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.1 0 1.2.9 2.4 1 2.6.1.2 1.8 2.9 4.5 4 2.7 1.1 2.7.7 3.2.7.5 0 1.6-.6 1.8-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.4-.3zM12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.8-1.5C8.3 21.5 10.1 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+<a class="whatsapp-float" href="https://wa.me/5218131164776" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 11.6a8.4 8.4 0 0 1-12.4 7.4L3.5 20.4l1.4-4.4a8.4 8.4 0 1 1 15.6-4.4z"/><path d="M9 9.2c.3 1.9 2 3.9 4.1 4.6l1.2-1.1 1.8.9-.4 1.6c-3 .4-6.6-2.8-7.2-6l1.5-.6.9 1.7z"/></svg>
+  <span class="whatsapp-texto">WhatsApp</span>
 </a>
 
 <script src="script.js"></script>
