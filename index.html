@@ -36,7 +36,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&display=swap">
 
 <!-- ?v= obliga al navegador a descargar la versión nueva; cambiarlo en cada despliegue -->
-<link rel="stylesheet" href="styles.css?v=20261029">
+<link rel="stylesheet" href="styles.css?v=20261029c">
 
 <!-- ===================== Datos estructurados (Schema.org) para SEO ===================== -->
 <script type="application/ld+json">
@@ -528,7 +528,7 @@
     <div class="agenda-intro">
       <p class="eyebrow"><span class="num-ambar">08</span> <span class="tenue-claro">Agenda tu cita</span></p>
       <h2 id="agenda-title">Agenda tu <span class="ligero">cotización.</span></h2>
-      <p class="agenda-lead">Cuéntanos qué necesitas en tres pasos. Al enviar, abrimos WhatsApp con tus datos para confirmar la cita.</p>
+      <p class="agenda-lead">Cuéntanos qué necesitas en dos pasos. Al enviar, abrimos WhatsApp con tus datos para confirmar la cita.</p>
       <dl class="agenda-contacto">
         <div><dt>Correo</dt><dd><a class="link-flecha" href="mailto:contacto@artressa.com.mx"><span class="subraya">contacto@artressa.com.mx</span></a></dd></div>
         <div><dt>Teléfono</dt><dd><a class="link-flecha" href="tel:+528131164776"><span class="subraya">+52 81 3116 4776</span></a></dd></div>
@@ -540,7 +540,7 @@
       <div class="enviado entra" id="formEnviado" role="status" aria-live="polite" hidden>
         <p class="eyebrow num-ambar">Solicitud lista</p>
         <p class="enviado-titulo">Gracias, <span id="envNombre"></span>. <span class="ligero">Abrimos WhatsApp con tus datos.</span></p>
-        <p class="enviado-texto">Envía el mensaje para confirmar tu cita del <span id="envFecha"></span> (<span id="envHorario"></span>). Te responderemos para confirmar día y hora.</p>
+        <p class="enviado-texto">Envía el mensaje para solicitar tu cita. Te responderemos para confirmar día y hora.</p>
         <div class="enviado-acciones">
           <a class="link-flecha" id="envWhatsapp" href="https://wa.me/5218131164776" target="_blank" rel="noopener"><span class="subraya">Abrir WhatsApp de nuevo</span> <span class="flecha" aria-hidden="true">→</span></a>
           <button class="btn-atras" id="formReiniciar" type="button">Agendar otra cita</button>
@@ -548,17 +548,16 @@
       </div>
 
       <form id="quoteForm" novalidate aria-labelledby="agenda-title">
-        <div class="pasos-barra" role="group" id="pasosBarra" aria-label="Paso 1 de 3">
+        <div class="pasos-barra" role="group" id="pasosBarra" aria-label="Paso 1 de 2">
           <div class="is-on"><div class="seg"><span></span></div><div class="seg-label"><span>01</span><span class="ocultar-movil">Contacto</span></div></div>
           <div><div class="seg"><span></span></div><div class="seg-label"><span>02</span><span class="ocultar-movil">Proyecto</span></div></div>
-          <div><div class="seg"><span></span></div><div class="seg-label"><span>03</span><span class="ocultar-movil">Cita</span></div></div>
         </div>
 
         <div class="equipo-chip" id="equipoChip" hidden><span class="cuadro" aria-hidden="true"></span>Equipo: <span id="equipoChipTxt"></span></div>
 
         <!-- Paso 1 -->
         <fieldset class="form-paso entra" data-paso="1">
-          <legend class="sr-only">Paso 1 de 3: datos de contacto</legend>
+          <legend class="sr-only">Paso 1 de 2: datos de contacto</legend>
           <div class="campo">
             <label class="campo-label" for="nombre">Nombre *</label>
             <input class="campo-input" id="nombre" name="nombre" type="text" autocomplete="name" placeholder="Nombre y apellido" required aria-describedby="e-nombre">
@@ -587,7 +586,7 @@
 
         <!-- Paso 2 -->
         <fieldset class="form-paso entra" data-paso="2" hidden>
-          <legend class="sr-only">Paso 2 de 3: tu proyecto</legend>
+          <legend class="sr-only">Paso 2 de 2: tu proyecto</legend>
           <div class="campo">
             <label class="campo-label" for="equipo">Equipo de interés *</label>
             <select class="campo-input" id="equipo" name="equipo" required aria-describedby="e-equipo">
@@ -609,41 +608,6 @@
           <div class="campo">
             <label class="campo-label" for="descripcion">Descripción del proyecto</label>
             <textarea class="campo-input" id="descripcion" name="descripcion" rows="4" placeholder="Aplicación, equipo actual, cantidad…"></textarea>
-          </div>
-          <div class="form-nav">
-            <button class="btn-atras" type="button" data-accion="atras">← Atrás</button>
-            <button class="btn-borde" type="button" data-accion="siguiente">Continuar <span class="flecha" aria-hidden="true">→</span></button>
-          </div>
-        </fieldset>
-
-        <!-- Paso 3 -->
-        <fieldset class="form-paso entra" data-paso="3" hidden>
-          <legend class="sr-only">Paso 3 de 3: tu cita</legend>
-          <div class="campo" role="radiogroup" aria-labelledby="l-tipo" aria-describedby="e-tipo">
-            <span class="campo-label" id="l-tipo">Tipo de cita *</span>
-            <div class="chips">
-              <label class="chip"><input class="sr-only" type="radio" name="tipo" value="Visita en planta"><span>Visita en planta</span></label>
-              <label class="chip"><input class="sr-only" type="radio" name="tipo" value="Visita técnica"><span>Visita técnica</span></label>
-              <label class="chip"><input class="sr-only" type="radio" name="tipo" value="Llamada"><span>Llamada</span></label>
-              <label class="chip"><input class="sr-only" type="radio" name="tipo" value="Videollamada"><span>Videollamada</span></label>
-            </div>
-            <span class="campo-error" id="e-tipo"></span>
-          </div>
-          <div class="campos-dos">
-            <div class="campo">
-              <label class="campo-label" for="fecha">Fecha preferida *</label>
-              <input class="campo-input" id="fecha" name="fecha" type="date" required aria-describedby="e-fecha h-fecha">
-              <span class="campo-ayuda" id="h-fecha">Lunes a sábado</span>
-              <span class="campo-error" id="e-fecha"></span>
-            </div>
-            <div class="campo" role="radiogroup" aria-labelledby="l-horario" aria-describedby="e-horario">
-              <span class="campo-label" id="l-horario">Horario *</span>
-              <div class="chips chips-fijo">
-                <label class="chip"><input class="sr-only" type="radio" name="horario" value="Mañana"><span>Mañana</span></label>
-                <label class="chip"><input class="sr-only" type="radio" name="horario" value="Tarde"><span>Tarde</span></label>
-              </div>
-              <span class="campo-error" id="e-horario"></span>
-            </div>
           </div>
           <div class="form-nav form-nav-final">
             <button class="btn-atras" type="button" data-accion="atras">← Atrás</button>
@@ -698,6 +662,6 @@
   <span class="whatsapp-texto">WhatsApp</span>
 </a>
 
-<script src="script.js?v=20261029"></script>
+<script src="script.js?v=20261029c"></script>
 </body>
 </html>

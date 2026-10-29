@@ -2,7 +2,7 @@
    ARTRESSA — Crea · Innova · Soluciona
    JS: navbar y progreso de scroll, menú móvil, revelados,
    contadores, parallax/giros, galería horizontal, acordeón FAQ,
-   formulario de 3 pasos -> WhatsApp
+   formulario de 2 pasos -> WhatsApp
 ========================================================= */
 
 // ============ CONFIG: reemplazar con el número real del cliente ============
@@ -28,7 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const mqGaleria = window.matchMedia("(min-width: 900px)");
 
   function limitar(valor, min, max) { return Math.min(max, Math.max(min, valor)); }
-  function pad(n) { return (n < 10 ? "0" : "") + n; }
 
   /* ---------------------- Menú móvil ---------------------- */
   const navbar = document.getElementById("navbar");
@@ -230,7 +229,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  /* ---------------------- Formulario de 3 pasos -> WhatsApp ---------------------- */
+  /* ---------------------- Formulario de 2 pasos -> WhatsApp ---------------------- */
   const quoteForm = document.getElementById("quoteForm");
   const formEnviado = document.getElementById("formEnviado");
   const agenda = document.getElementById("agenda");
@@ -243,16 +242,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const equipoChipTxt = document.getElementById("equipoChipTxt");
     const campos = {
       1: ["nombre", "telefono", "correo"],
-      2: ["equipo"],
-      3: ["tipo", "fecha", "horario"]
+      2: ["equipo"]
     };
     let pasoActual = 1;
-
-    function hoy() {
-      const d = new Date();
-      return d.getFullYear() + "-" + pad(d.getMonth() + 1) + "-" + pad(d.getDate());
-    }
-    document.getElementById("fecha").min = hoy();
 
     function valor(nombre) {
       const el = quoteForm.elements[nombre];
@@ -269,13 +261,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
       if (nombre === "correo") return v && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v) ? "Revisa el formato del correo." : "";
       if (nombre === "equipo") return v ? "" : "Elige un equipo o «No estoy seguro».";
-      if (nombre === "tipo") return v ? "" : "Elige el tipo de cita.";
-      if (nombre === "horario") return v ? "" : "Elige mañana o tarde.";
-      if (nombre === "fecha") {
-        if (!v) return "Elige una fecha.";
-        if (v < hoy()) return "Elige una fecha a partir de hoy.";
-        if (new Date(v + "T12:00:00").getDay() === 0) return "Los domingos no agendamos citas. Elige otro día.";
-      }
       return "";
     }
 
@@ -300,17 +285,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Revalida al salir del campo o al cambiarlo si ya mostraba error
-    ["nombre", "telefono", "correo", "equipo", "fecha"].forEach(function (nombre) {
+    ["nombre", "telefono", "correo", "equipo"].forEach(function (nombre) {
       const el = document.getElementById(nombre);
       el.addEventListener("blur", function () {
         if (el.value.trim() || nombre === "nombre" || nombre === "telefono") mostrarError(nombre, validar(nombre));
       });
       el.addEventListener("input", function () {
-        if (el.getAttribute("aria-invalid") === "true" || nombre === "fecha" || nombre === "equipo") mostrarError(nombre, validar(nombre));
+        if (el.getAttribute("aria-invalid") === "true" || nombre === "equipo") mostrarError(nombre, validar(nombre));
       });
-    });
-    quoteForm.querySelectorAll("input[type='radio']").forEach(function (radio) {
-      radio.addEventListener("change", function () { mostrarError(radio.name, ""); });
     });
 
     function actualizarChip() {
@@ -323,7 +305,7 @@ document.addEventListener("DOMContentLoaded", function () {
       pasoActual = n;
       pasos.forEach(function (paso) { paso.hidden = paso.dataset.paso !== String(n); });
       segmentos.forEach(function (seg, i) { seg.classList.toggle("is-on", i < n); });
-      pasosBarra.setAttribute("aria-label", "Paso " + n + " de 3");
+      pasosBarra.setAttribute("aria-label", "Paso " + n + " de 2");
       actualizarChip();
       // Regresa al inicio de la sección si el formulario quedó arriba de la pantalla
       if (agenda.getBoundingClientRect().top < 0) {
@@ -349,13 +331,6 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
 
-    function fechaLarga(v) {
-      if (!v) return "";
-      try {
-        return new Date(v + "T12:00:00").toLocaleDateString("es-MX", { weekday: "long", day: "numeric", month: "long", year: "numeric" });
-      } catch (err) { return v; }
-    }
-
     function urlWhatsapp() {
       const lineas = ["Hola ARTRESSA, quiero agendar una cita para cotización.", ""];
       lineas.push("• Nombre: " + valor("nombre"));
@@ -365,26 +340,26 @@ document.addEventListener("DOMContentLoaded", function () {
       lineas.push("• Equipo de interés: " + (EQUIPOS[valor("equipo")] || ""));
       if (valor("medidas")) lineas.push("• Medidas: " + valor("medidas"));
       if (valor("descripcion")) lineas.push("• Proyecto: " + valor("descripcion"));
-      lineas.push("• Tipo de cita: " + valor("tipo"));
-      lineas.push("• Fecha preferida: " + fechaLarga(valor("fecha")));
-      lineas.push("• Horario: " + valor("horario"));
       return "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(lineas.join("\n"));
     }
 
     quoteForm.addEventListener("submit", function (e) {
       e.preventDefault();
-      if (!revisarPaso(3)) return;
+      // Enter en el paso 1 avanza en lugar de enviar
+      if (pasoActual === 1) {
+        if (revisarPaso(1)) irAPaso(2);
+        return;
+      }
+      if (!revisarPaso(2)) return;
 
       const url = urlWhatsapp();
       window.open(url, "_blank", "noopener");
 
       document.getElementById("envNombre").textContent = valor("nombre").split(/\s+/)[0];
-      document.getElementById("envFecha").textContent = fechaLarga(valor("fecha"));
-      document.getElementById("envHorario").textContent = valor("horario").toLowerCase();
       document.getElementById("envWhatsapp").href = url;
       quoteForm.hidden = true;
       formEnviado.hidden = false;
-      irAPaso(3);
+      irAPaso(2);
     });
 
     document.getElementById("formReiniciar").addEventListener("click", function () {
